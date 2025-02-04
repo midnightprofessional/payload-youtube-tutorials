@@ -14,10 +14,10 @@ const Posts: CollectionConfig = {
   },
   // auth: true,
   access: {
-    create: ({ req }) => req.user?.role === 'admin',
+    create: ({ req }: AccessArgs) => req.user?.role === 'admin',
     read: () => true,
-    update: ({ req }) => req.user?.role === 'admin' || req.user?.role === 'editor',
-    delete: ({ req }) => req.user?.role === 'admin',
+    update: ({ req }: AccessArgs) => req.user?.role === 'admin' || req.user?.role === 'editor',
+    delete: ({ req }: AccessArgs) => req.user?.role === 'admin',
   },
   fields: [
     {
