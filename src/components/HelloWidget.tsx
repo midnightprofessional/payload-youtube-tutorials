@@ -1,10 +1,5 @@
 import React from 'react'
-import '../styles/hello-widget.css'
 
 export default function HelloWidget() {
-  return (
-    <div style={{ fontSize: '3em' }} className="hello-widget">
-      Hello Payload 🧨
-    </div>
-  )
+  return <div className="p-5 rounded-lg text-center text-5xl bg-[#29707a]">Hello Payload 🧨</div>
 }

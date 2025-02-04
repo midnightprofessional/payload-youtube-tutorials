@@ -10,14 +10,7 @@ export default function ExportButton() {
 
   return (
     <button
-      style={{
-        padding: '10px 20px',
-        backgroundColor: '#007bff',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '4px',
-      }}
-      className="export-button"
+      className="py-3 px-5 text-[#fff] bg-[#007bff] rounded-md border-none cursor-pointer hover:bg-[#007bff]/90"
       onClick={handleExport}
     >
       Export Data
