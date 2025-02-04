@@ -19,6 +19,10 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    components: {
+      beforeDashboard: ['/components/HelloWidget.tsx'],
+      actions: ['/components/ExportButton.tsx'],
+    },
   },
   collections,
   editor: lexicalEditor(),
